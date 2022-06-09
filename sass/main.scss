@@ -1,0 +1,17 @@
+/*Utilisation du pattern 7-1 pour les fichiers sass*/
+
+/*Imports*/
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/animations";
+
+@import "./base/base";
+@import "./base/typography";
+
+@import "./layouts/header";
+@import "./layouts/footer";
+
+@import "./components/btn";
+
+/*fichiers scss pour les éléments selon les pages*/
+@import "./pages/index";

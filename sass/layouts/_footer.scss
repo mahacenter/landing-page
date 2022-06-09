@@ -1,0 +1,11 @@
+/*Définition du footer*/
+.footer {
+    box-sizing: border-box;
+    width: 100%;
+    background-color:$dark-blue;
+    padding:50px;
+}
+
+.footer__text:visited{
+    color: #fff;
+  }

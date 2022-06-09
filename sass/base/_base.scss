@@ -1,0 +1,36 @@
+/*Bases*/
+body {
+  box-sizing: border-box;
+  min-height: 100vh;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px;
+  margin: 0px;
+}
+
+/*Layout of header, main and footer*/
+main {
+  box-sizing: border-box;
+  flex-grow: 1;
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header,
+footer {
+  flex-shrink: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+

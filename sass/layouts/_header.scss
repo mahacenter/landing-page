@@ -1,0 +1,67 @@
+/*Définition du header*/
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px;
+    background-color: $dark-blue;
+    &__part1 {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        max-width: 400px;
+        &__logo {
+            img {
+                padding: 10px;
+                width: 80px;
+                height: auto;
+            }
+        }
+        &__title {
+            color: white;
+            font-size: 20px;
+            font-family: "Poppins";
+            font-weight: 600;
+            margin-left:20px;
+        }
+    }
+    &__nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+        &__ul {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            align-self: flex-end;
+            color: white;
+            font-size: 16px;
+            font-family: "Poppins";
+            font-weight: 600;
+            &__li {
+                margin-right: 20px;
+                
+            }
+            &__li:hover {
+                border-bottom: 2px solid #fff;
+            }
+        }
+        &__btn--donate {
+            background-color: $dark-blue;
+            border:2px solid #fff;
+            color: white;
+            padding:5px 25px 5px 25px;
+            margin-right: 25px;
+            font-size: 16px;
+            font-family: "Poppins";
+            font-weight: 600;
+            cursor: pointer;
+        }
+        &__btn--donate:hover {
+            background-color:$secondary-color ;
+        }
+    }
+}
