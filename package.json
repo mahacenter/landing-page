@@ -1,22 +1,21 @@
 {
-  "name": "p3_code",
+  "name": "landing_page",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:css/style.css",
-    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/",
-    "dev": "concurrently --kill-others \"npm run sass\" \"npm run prefix\""
+    "sass": "sass --watch ./sass/main.scss:css/style.css"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MarianneBricquir/OC_projet3_ohmyfood.git"
+    "url": "git+https://github.com/mahacenter/landing-page.git"
   },
   "author": "",
   "license": "ISC",
-  "browserslist": "last 4 versions",
   "bugs": {
-    "url": "https://github.com/MarianneBricquir/OC_projet3_ohmyfood/issues"
+    "url": "https://github.com/mahacenter/landing-page/issues"
   },
-  "homepage": "https://github.com/MarianneBricquir/OC_projet3_ohmyfood#readme"
+  "homepage": "https://github.com/mahacenter/landing-page#readme",
+  "dependencies": {
+  }
 }

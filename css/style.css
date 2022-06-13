@@ -38,7 +38,6 @@ footer {
 
 a {
   text-decoration: none;
-  color: white;
 }
 
 a:visited {
@@ -62,14 +61,32 @@ p {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
 }
 
 h2 {
-  font-size: 16px;
+  font-size: 24px;
   font-family: "Poppins", sans-serif;
+  color: #fff;
+  padding: 10px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 22px;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  padding: 10px;
+  margin-top: 40px;
+  font-weight: 600;
+}
+
+.p--carousel {
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
 p {
@@ -77,8 +94,16 @@ p {
   font-size: 16px;
 }
 
+@media screen and (max-width: 992px) {
+  h1 {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+  }
+}
 /*Définition du header*/
 .header {
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -100,7 +125,7 @@ p {
 }
 .header__part1__title {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Poppins";
   font-weight: 600;
   margin-left: 20px;
@@ -108,23 +133,23 @@ p {
 .header__nav {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: baseline;
 }
 .header__nav__ul {
   display: flex;
   flex-direction: row;
   list-style: none;
-  align-self: flex-end;
   color: white;
   font-size: 16px;
   font-family: "Poppins";
-  font-weight: 600;
+  font-weight: 400;
 }
 .header__nav__ul__li {
   margin-right: 20px;
 }
 .header__nav__ul__li:hover {
-  border-bottom: 2px solid #fff;
+  font-family: "Poppins";
+  font-weight: 700;
 }
 .header__nav__btn--donate {
   background-color: #193863;
@@ -141,6 +166,51 @@ p {
   background-color: #ff6200ff;
 }
 
+/*media quieries mobile*/
+@media screen and (max-width: 992px) {
+  .header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .header__part1 {
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__part1__logo img {
+    padding: 10px;
+    width: 100px;
+    height: auto;
+  }
+  .header__part1__title {
+    color: white;
+    font-size: 16px;
+    font-family: "Poppins";
+    font-weight: 600;
+    text-align: center;
+  }
+  .header__nav {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__nav__ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__nav__ul__ul__li {
+    margin: 0px;
+  }
+  .header__nav__btn--donate {
+    margin: 0px;
+  }
+}
 /*Définition du footer*/
 .footer {
   box-sizing: border-box;
@@ -210,6 +280,59 @@ p {
   color: #777;
 }
 
+/*Carousel style*/
+.carousel-content {
+  box-sizing: border-box;
+  margin-left: 90px;
+  margin-right: 90px;
+}
+
+/*Bootstrap class*/
+.carousel {
+  margin-bottom: 100px;
+}
+
+.carousel-caption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  top: 20px;
+}
+
+.d-block {
+  height: 600px;
+}
+
+img {
+  object-fit: cover;
+}
+
+/*Mobile version*/
+@media screen and (max-width: 992px) {
+  .carousel-content {
+    padding: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .content-slide-1 {
+    display: none;
+  }
+
+  .d-block {
+    height: 400px;
+  }
+
+  .carousel-caption {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 40px;
+    display: block !important;
+  }
+}
 /*fichiers scss pour les éléments selon les pages*/
 /*Page d'accueil */
 /*Section ABOUT US*/
@@ -218,7 +341,7 @@ p {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 1600px;
+  /*height: 1800px;*/
   padding-top: 40px;
   margin: 0px;
 }
@@ -232,16 +355,18 @@ p {
   display: flex;
   flex-direction: column;
   color: #000;
-  width: 70%;
+  width: 60%;
 }
 .home__keywords__text__4i {
-  font-size: 40px;
+  font-size: 32px;
   font-weight: 800;
 }
 .home__keywords__map {
+  margin-right: 0px;
   margin-top: -45px;
 }
 .home__desc {
+  box-sizing: border-box;
   padding: 90px;
   align-self: center;
 }
@@ -279,42 +404,24 @@ p {
   border-bottom: 3px solid #1c6cac;
 }
 
-/*test caroussel*/
-/*Section appalication*/
+/*Section application*/
 .services {
   box-sizing: border-box;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
-  height: 500px;
   background-color: #1c6cac;
 }
 .services__content {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
+  padding-left: 90px;
 }
 .services__content__title {
-  margin-left: 90px;
-  margin-top: 30px;
-  font-size: 35px;
-  font-family: "Didact Gothic";
-  font-weight: bold;
-  color: white;
-}
-.services__content__desc {
-  margin-left: 90px;
-  margin-top: 30px;
-  text-align: justify;
-  font-size: 18px;
-  color: white;
-}
-.services__examples {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 20px;
-  width: 50%;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff6200ff;
+  width: 200px;
+  margin-top: -20px;
 }
 
 /*Section CONTACT US*/
@@ -331,6 +438,59 @@ p {
   font-weight: bold;
   color: #1c6cac;
   width: 65%;
+}
+
+/*Mobile version*/
+@media screen and (max-width: 992px) {
+  .home__keywords {
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    width: 100%;
+  }
+  .home__keywords__text {
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    width: 90%;
+  }
+  .home__keywords__text__4i {
+    font-size: 40px;
+    font-weight: 800;
+  }
+  .home__keywords__map {
+    padding: 0px;
+    box-sizing: border-box;
+    margin-top: 10px;
+  }
+  .home__keywords__map img {
+    width: 300px;
+    height: auto;
+  }
+  .home__desc {
+    box-sizing: border-box;
+    padding: 0px;
+    margin-top: 20px;
+    align-self: center;
+  }
+  .home__desc__item__icon {
+    width: 40px;
+    font-size: 30px;
+    height: 80px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .home__desc__item__text {
+    text-align: center;
+    width: 300px;
+    height: 80px;
+    font-size: 16px;
+    font-family: "Poppins";
+    position: relative;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,6 @@
 /*Définition du header*/
 .header {
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -21,39 +22,37 @@
         }
         &__title {
             color: white;
-            font-size: 20px;
+            font-size: 18px;
             font-family: "Poppins";
             font-weight: 600;
-            margin-left:20px;
+            margin-left: 20px;
         }
     }
     &__nav {
         display: flex;
         flex-direction: row;
-        align-items: center;
-        
+        align-items: baseline;
         &__ul {
             display: flex;
             flex-direction: row;
             list-style: none;
-            align-self: flex-end;
             color: white;
             font-size: 16px;
             font-family: "Poppins";
-            font-weight: 600;
+            font-weight: 400;
             &__li {
                 margin-right: 20px;
-                
             }
             &__li:hover {
-                border-bottom: 2px solid #fff;
+                font-family: "Poppins";
+                font-weight: 700;
             }
         }
         &__btn--donate {
             background-color: $dark-blue;
-            border:2px solid #fff;
+            border: 2px solid #fff;
             color: white;
-            padding:5px 25px 5px 25px;
+            padding: 5px 25px 5px 25px;
             margin-right: 25px;
             font-size: 16px;
             font-family: "Poppins";
@@ -61,7 +60,57 @@
             cursor: pointer;
         }
         &__btn--donate:hover {
-            background-color:$secondary-color ;
+            background-color: $secondary-color;
+        }
+    }
+}
+
+/*media quieries mobile*/
+@media screen and (max-width: 992px) {
+    .header {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        &__part1 {
+            max-width: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &__logo {
+                img {
+                    padding: 10px;
+                    width: 100px;
+                    height: auto;
+                }
+            }
+            &__title {
+                color: white;
+                font-size: 16px;
+                font-family: "Poppins";
+                font-weight: 600;
+                text-align: center;
+            }
+        }
+        &__nav {
+            margin-top:20px;
+            margin-bottom:20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &__ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                &__ul {
+                    &__li {
+                        margin: 0px;
+                    }
+                }
+            }
+            &__btn--donate {
+                margin:0px;
+            }
         }
     }
 }

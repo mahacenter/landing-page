@@ -22,17 +22,46 @@ p {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 600;
     font-family: "Poppins", sans-serif;
 }
 
 h2 {
-    font-size: 16px;
+    font-size: 24px;
     font-family: "Poppins", sans-serif;
+    color:#fff;
+    padding:10px;
+    font-weight: 700;
+    
+}
+
+h3 {
+    font-size: 22px;
+    font-family: "Poppins", sans-serif;
+    color:#fff;
+    padding:10px;
+    margin-top:40px;
+    font-weight: 600;
+    
+}
+
+
+.p--carousel {
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
 }
 
 p {
     margin-top: 5px;
     font-size: 16px;
+}
+
+@media screen and (max-width: 992px) {
+    h1 {
+        font-size: 20px;
+        font-weight: 600;
+        font-family: "Poppins", sans-serif;
+    }
 }
