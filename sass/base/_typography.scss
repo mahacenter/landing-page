@@ -40,23 +40,62 @@ h3 {
     font-size: 22px;
     font-family: "Poppins", sans-serif;
     color:#fff;
-    padding:10px;
     margin-top:40px;
+    margin-bottom:40px;
     font-weight: 600;
-    
 }
 
-
-.p--carousel {
-    font-size: 24px;
-    font-family: "Poppins", sans-serif;
+h4 {
+    font-size: 18px;
     font-weight: 600;
+    color:black;
+    font-family: "Poppins", sans-serif;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: 600;
+    color:#FFF;
+    font-family: "Poppins", sans-serif;
+}
+
+h6 {
+    font-size: 18px;
+    font-weight: 600;
+    color:#FFF;
+    font-family: "Poppins", sans-serif;
 }
 
 p {
     margin-top: 5px;
     font-size: 16px;
+    font-family: "Poppins", sans-serif;
 }
+
+.p-carousel {
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.p-white {
+    margin-top: 5px;
+    font-size: 16px;
+    color:#FFF;
+    margin-bottom:20px;
+    font-family: "Poppins", sans-serif;
+}
+
+.p-blue {
+    margin-top: 5px;
+    font-size: 22px;
+    text-align: center;
+    color:$dark-blue;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
 
 @media screen and (max-width: 992px) {
     h1 {

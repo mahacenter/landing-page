@@ -6,7 +6,6 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    /*height: 1800px;*/
     padding-top: 40px;
     margin: 0px;
     &__keywords {
@@ -25,7 +24,6 @@
             }
         }
         &__map {
-            margin-right:0px;
             margin-top: -45px;
         }
     }
@@ -51,7 +49,7 @@
                 text-align: center;
                 width: 600px;
                 height: 80px;
-                font-size: 24px;
+                font-size: 20px;
                 font-family: "Poppins";
                 padding-bottom: 10px;
                 position: relative;
@@ -69,6 +67,23 @@
     }
 }
 
+/*Section title and paragraph*/
+.section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondary-color;
+    width: 200px;
+    margin-top: -20px;
+}
+
+.section-paragraph {
+    text-align: justify;
+    width: 50%;
+    margin-right: 10%;
+    margin-bottom: 100px;
+}
+
 /*Section application*/
 .services {
     box-sizing: border-box;
@@ -77,35 +92,124 @@
     width: 100%;
     background-color: $light-blue;
     &__content {
-        padding-left:90px;
-        &__title {
+        padding-left: 90px;
+        padding-right: 90px;
+        &__platform {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: $secondary-color;
-            width: 200px;
-            margin-top: -20px;
+            flex-direction: row;
+            &__desc {
+                text-align: justify;
+                margin-left: 10%;
+                &__build {
+                    margin-top: 50px;
+                }
+                &__countries {
+                    margin-top: 20px;
+                }
+            }
+        }
+        &__brief {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 50px;
+            &__extrait {
+                text-align: justify;
+                width: 50%;
+                font-style: italic;
+            }
+            &__access {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
         }
     }
 }
 
-/*Section CONTACT US*/
-.contact {
-    box-sizing: border-box;
-    width: 100%;
-    height: 500px;
-    padding-left: 90px;
-    padding-top: 30px;
-    &__title {
-        font-size: 35px;
-        font-family: "Didact Gothic";
-        font-weight: bold;
-        color: $light-blue;
-        width: 65%;
+.tech {
+    @include services-elements;
+    justify-content: space-between;
+    height: 120px;
+    &__logo {
+        height: 50px;
+        width: auto;
+        margin-right: 5%;
     }
 }
 
-/*Mobile version*/
+.countries {
+    @include services-elements;
+    justify-content: space-around;
+}
+
+/**************** About us section *****************/
+.us {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: $dark-blue;
+    &__content {
+        padding-left: 90px;
+        padding-right: 90px;
+        &__bloc {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+}
+/**************** End of the About us section *****************/
+
+/**************** Contact section "Get in touch!"*****************/
+.contact {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    &__content {
+        padding-left: 90px;
+        &__desc {
+            display: flex;
+            flex-direction: row;
+            &__question {
+                width: 40%;
+                height: 400px;
+                &__doyou {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+                    margin-right: 50px;
+                }
+            }
+            &__form {
+                width: 60%;
+                margin-top: -28.8px;
+                background-color: $secondary-color;
+                height: 450px;
+            }
+        }
+    }
+}
+/**************** End of the Contact section *****************/
+
+/**************** Donate section *****************/
+.donate {
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $dark-blue;
+        height: 200px;
+        width: 100%;
+    }
+}
+/**************** End of the Donate section *****************/
+
+/**************** Mobile version *****************/
 @media screen and (max-width: 992px) {
     .home {
         &__keywords {
@@ -160,4 +264,63 @@
             }
         }
     }
+    .section-paragraph {
+        box-sizing: border-box;
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+    .services {
+        &__content {
+            @include section-title-location;
+            &__platform {
+                display: flex;
+                flex-direction: column;
+                &__desc {
+                    margin: 30px 0px 0px 0px;
+                }
+            }
+            &__brief {
+                flex-direction: column;
+                margin-bottom: 50px;
+                &__extrait {
+                    text-align: justify;
+                    width: 100%;
+                }
+                &__access {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .us {
+        &__content {
+            @include section-title-location;
+        }
+    }
+
+    .contact {
+        &__content {
+            @include section-title-location;
+            &__desc {
+                display: flex;
+                flex-direction: column;
+                &__question {
+                    width: 100%;
+                    height: 200px;
+                    &__doyou {
+                        width: 100%;
+                    }
+                }
+                &__form {
+                    width: 100%;
+                    height: 350px;
+                    margin: 0px;
+                }
+            }
+        }
+    }
 }
+
+/**************** End of the mobile version *****************/

@@ -2,10 +2,61 @@
 .footer {
     box-sizing: border-box;
     width: 100%;
-    background-color:$dark-blue;
-    padding:50px;
+    background-color: $dark-blue;
+    padding: 50px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    &__blocs {
+        width: 90%;
+        display: flex;
+        flex-direction:row;
+        justify-content: space-around;
+        align-items: flex-start;
+        &__bloc{
+            width: 300px;
+        }
+    }
 }
 
-.footer__text:visited{
+.footer__text:visited {
     color: #fff;
+}
+
+ul {
+    list-style-type: none;
+    margin:0px;
+    padding:0px;
   }
+
+  
+li {
+    list-style-type: none;
+    margin:0px;
+    padding:0px;
+    font-size: 14px;
+    color:#FFF;
+    font-family: "Poppins", sans-serif;
+  }
+
+.copyright{
+    font-size: 12px;
+    margin-top:50px;
+    color:#FFF;
+}
+
+/*media quieries mobile*/
+@media screen and (max-width: 992px) {
+    .footer {
+        padding:0px;
+        &__blocs {
+            flex-direction:column;
+            
+            &__bloc{
+                width: 280px;
+                margin-bottom:25px;
+            }
+        }
+    }
+}

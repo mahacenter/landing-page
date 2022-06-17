@@ -5,6 +5,7 @@
 /*logo color*/
 /*logo color*/
 /*logo color*/
+/*Mixins*/
 /* HOME - items animaiton*/
 /*Bases*/
 @import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
@@ -38,10 +39,16 @@ footer {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 a:visited {
   color: white;
+}
+
+a:hover {
+  color: #FFF;
+  font-weight: 800;
 }
 
 /*Bases of the web site, fonts*/
@@ -78,20 +85,58 @@ h3 {
   font-size: 22px;
   font-family: "Poppins", sans-serif;
   color: #fff;
-  padding: 10px;
   margin-top: 40px;
+  margin-bottom: 40px;
   font-weight: 600;
 }
 
-.p--carousel {
-  font-size: 24px;
-  font-family: "Poppins", sans-serif;
+h4 {
+  font-size: 18px;
   font-weight: 600;
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #FFF;
+  font-family: "Poppins", sans-serif;
+}
+
+h6 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #FFF;
+  font-family: "Poppins", sans-serif;
 }
 
 p {
   margin-top: 5px;
   font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+.p-carousel {
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.p-white {
+  margin-top: 5px;
+  font-size: 16px;
+  color: #FFF;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.p-blue {
+  margin-top: 5px;
+  font-size: 22px;
+  text-align: center;
+  color: #193863;
+  font-family: "Poppins", sans-serif;
 }
 
 @media screen and (max-width: 992px) {
@@ -140,30 +185,16 @@ p {
   flex-direction: row;
   list-style: none;
   color: white;
-  font-size: 16px;
   font-family: "Poppins";
   font-weight: 400;
 }
 .header__nav__ul__li {
+  font-size: 16px;
   margin-right: 20px;
 }
 .header__nav__ul__li:hover {
   font-family: "Poppins";
   font-weight: 700;
-}
-.header__nav__btn--donate {
-  background-color: #193863;
-  border: 2px solid #fff;
-  color: white;
-  padding: 5px 25px 5px 25px;
-  margin-right: 25px;
-  font-size: 16px;
-  font-family: "Poppins";
-  font-weight: 600;
-  cursor: pointer;
-}
-.header__nav__btn--donate:hover {
-  background-color: #ff6200ff;
 }
 
 /*media quieries mobile*/
@@ -191,6 +222,7 @@ p {
     font-family: "Poppins";
     font-weight: 600;
     text-align: center;
+    margin-left: 0px;
   }
   .header__nav {
     margin-top: 20px;
@@ -200,12 +232,14 @@ p {
     align-items: center;
   }
   .header__nav__ul {
+    padding: 0px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .header__nav__ul__ul__li {
-    margin: 0px;
+  .header__nav__ul__li {
+    margin-right: 0px;
   }
   .header__nav__btn--donate {
     margin: 0px;
@@ -217,30 +251,124 @@ p {
   width: 100%;
   background-color: #193863;
   padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer__blocs {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.footer__blocs__bloc {
+  width: 300px;
 }
 
 .footer__text:visited {
   color: #fff;
 }
 
-/*btn*/
-.card {
-  width: 300px;
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+  color: #FFF;
+  font-family: "Poppins", sans-serif;
+}
+
+.copyright {
+  font-size: 12px;
+  margin-top: 50px;
+  color: #FFF;
+}
+
+/*media quieries mobile*/
+@media screen and (max-width: 992px) {
+  .footer {
+    padding: 0px;
+  }
+  .footer__blocs {
+    flex-direction: column;
+  }
+  .footer__blocs__bloc {
+    width: 280px;
+    margin-bottom: 25px;
+  }
+}
+/*btn donate*/
+.btnDonate {
+  background-color: #193863;
+  border: 2px solid #fff;
+  color: white;
+  padding: 5px 25px 5px 25px;
+  margin-right: 25px;
+  font-size: 16px;
+  font-family: "Poppins";
+  font-weight: 600;
+  cursor: pointer;
+}
+.btnDonate--end {
+  margin: 0px;
+  width: 180px;
+  height: 60px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.btnDonate:hover {
+  background-color: #ff6200ff;
+}
+
+@media screen and (max-width: 992px) {
+  .btnDonate {
+    margin: 0px;
+  }
+}
+/*btnBrief*/
+.btnServices {
+  background-color: #1c6cac;
+  border: 2px solid #fff;
+  color: white;
+  padding: 5px 15px 5px 15px;
+  font-size: 16px;
+  font-family: "Poppins";
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btnServices:hover {
+  background-color: #193863;
+}
+
+/*btn : click on card*/
+.card-ghana {
+  width: 280px;
+  height: 500px;
   margin: 0px auto;
   background-color: white;
   box-shadow: 0px 5px 20px #193863;
 }
-.card a {
+.card-ghana a {
   color: #333;
   text-decoration: none;
 }
-.card:hover .card-image img {
+.card-ghana:hover .card-image img {
   width: 125%;
   filter: grayscale(0);
 }
 
 .card-image {
-  height: 250px;
+  height: 300px;
   position: relative;
   overflow: hidden;
 }
@@ -261,22 +389,27 @@ p {
   box-sizing: border-box;
 }
 
-.card-date {
-  font-family: "Source Sans Pro", sans-serif;
-}
-
-.card-title, .card-exceprt {
-  font-family: "Didact Gothic", serif;
-}
-
-.card-date, .card-title {
+.card-subtitle {
+  font-family: "Poppins", sans-serif;
   text-align: center;
   text-transform: uppercase;
-  font-weight: bold;
-  margin-bottom: 10px;
+  font-weight: 400;
 }
 
-.card-date, .card-excerpt {
+.card-title,
+.card-exceprt {
+  font-family: "Poppins", serif;
+}
+
+.card-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.card-subtitle,
+.card-excerpt {
   color: #777;
 }
 
@@ -341,7 +474,6 @@ img {
   display: flex;
   flex-direction: column;
   width: 100%;
-  /*height: 1800px;*/
   padding-top: 40px;
   margin: 0px;
 }
@@ -362,7 +494,6 @@ img {
   font-weight: 800;
 }
 .home__keywords__map {
-  margin-right: 0px;
   margin-top: -45px;
 }
 .home__desc {
@@ -389,7 +520,7 @@ img {
   text-align: center;
   width: 600px;
   height: 80px;
-  font-size: 24px;
+  font-size: 20px;
   font-family: "Poppins";
   padding-bottom: 10px;
   position: relative;
@@ -404,6 +535,23 @@ img {
   border-bottom: 3px solid #1c6cac;
 }
 
+/*Section title and paragraph*/
+.section-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff6200ff;
+  width: 200px;
+  margin-top: -20px;
+}
+
+.section-paragraph {
+  text-align: justify;
+  width: 50%;
+  margin-right: 10%;
+  margin-bottom: 100px;
+}
+
 /*Section application*/
 .services {
   box-sizing: border-box;
@@ -414,33 +562,128 @@ img {
 }
 .services__content {
   padding-left: 90px;
+  padding-right: 90px;
 }
-.services__content__title {
+.services__content__platform {
+  display: flex;
+  flex-direction: row;
+}
+.services__content__platform__desc {
+  text-align: justify;
+  margin-left: 10%;
+}
+.services__content__platform__desc__build {
+  margin-top: 50px;
+}
+.services__content__platform__desc__countries {
+  margin-top: 20px;
+}
+.services__content__brief {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.services__content__brief__extrait {
+  text-align: justify;
+  width: 50%;
+  font-style: italic;
+}
+.services__content__brief__access {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tech {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: space-between;
+  height: 120px;
+}
+.tech__logo {
+  height: 50px;
+  width: auto;
+  margin-right: 5%;
+}
+
+.countries {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: space-around;
+}
+
+/**************** About us section *****************/
+.us {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #193863;
+}
+.us__content {
+  padding-left: 90px;
+  padding-right: 90px;
+}
+.us__content__bloc {
+  display: flex;
+  flex-direction: row;
+}
+
+/**************** End of the About us section *****************/
+/**************** Contact section "Get in touch!"*****************/
+.contact {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.contact__content {
+  padding-left: 90px;
+}
+.contact__content__desc {
+  display: flex;
+  flex-direction: row;
+}
+.contact__content__desc__question {
+  width: 40%;
+  height: 400px;
+}
+.contact__content__desc__question__doyou {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
+  margin-right: 50px;
+}
+.contact__content__desc__form {
+  width: 60%;
+  margin-top: -28.8px;
   background-color: #ff6200ff;
-  width: 200px;
-  margin-top: -20px;
+  height: 450px;
 }
 
-/*Section CONTACT US*/
-.contact {
-  box-sizing: border-box;
+/**************** End of the Contact section *****************/
+/**************** Donate section *****************/
+.donate__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #193863;
+  height: 200px;
   width: 100%;
-  height: 500px;
-  padding-left: 90px;
-  padding-top: 30px;
-}
-.contact__title {
-  font-size: 35px;
-  font-family: "Didact Gothic";
-  font-weight: bold;
-  color: #1c6cac;
-  width: 65%;
 }
 
-/*Mobile version*/
+/**************** End of the Donate section *****************/
+/**************** Mobile version *****************/
 @media screen and (max-width: 992px) {
   .home__keywords {
     box-sizing: border-box;
@@ -491,6 +734,86 @@ img {
     font-family: "Poppins";
     position: relative;
   }
+
+  .section-paragraph {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 0px;
+  }
+
+  .services__content {
+    box-sizing: border-box;
+    padding: 5%;
+    margin-top: -20px;
+  }
+  .services__content__platform {
+    display: flex;
+    flex-direction: column;
+  }
+  .services__content__platform__desc {
+    margin: 30px 0px 0px 0px;
+  }
+  .services__content__brief {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .services__content__brief__extrait {
+    text-align: justify;
+    width: 100%;
+  }
+  .services__content__brief__access {
+    width: 100%;
+  }
+
+  .us__content {
+    box-sizing: border-box;
+    padding: 5%;
+    margin-top: -20px;
+  }
+
+  .contact__content {
+    box-sizing: border-box;
+    padding: 5%;
+    margin-top: -20px;
+  }
+  .contact__content__desc {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact__content__desc__question {
+    width: 100%;
+    height: 200px;
+  }
+  .contact__content__desc__question__doyou {
+    width: 100%;
+  }
+  .contact__content__desc__form {
+    width: 100%;
+    height: 350px;
+    margin: 0px;
+  }
+}
+/**************** End of the mobile version *****************/
+/*Page "Coming son" style*/
+.coming-soon {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+  position: fixed;
+  background-color: #193863;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.coming-soon__title {
+  width: 50%;
+  font-size: 34px;
+  color: #fff;
+  font-family: "Poppins";
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

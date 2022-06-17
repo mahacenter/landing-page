@@ -27,9 +27,14 @@ footer {
 
 a {
   text-decoration: none;
+  color:white;
 }
 
 a:visited {
   color: white;
 }
 
+a:hover{
+  color:#FFF;
+  font-weight: 800;
+}

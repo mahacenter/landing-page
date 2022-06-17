@@ -1,70 +1,117 @@
-/*btn*/
+/*btn donate*/
+.btnDonate {
+  background-color: $dark-blue;
+  border: 2px solid #fff;
+  color: white;
+  padding: 5px 25px 5px 25px;
+  margin-right: 25px;
+  font-size: 16px;
+  font-family: "Poppins";
+  font-weight: 600;
+  cursor: pointer;
+  &--end {
+    margin:0px;
+    width: 180px;
+    height: 60px;
+    font-size: 24px;
+    text-align:center;
+  }
+}
+.btnDonate:hover {
+  background-color: $secondary-color;
+}
 
-$card-width: 300px;
+@media screen and (max-width: 992px) {
+ .btnDonate {
+     margin:0px;
+  }
+}
+
+/*btnBrief*/
+.btnServices{
+  background-color: $light-blue;
+  border: 2px solid #fff;
+  color: white;
+  padding: 5px 15px 5px 15px;
+  font-size: 16px;
+  font-family: "Poppins";
+  font-weight: 600;
+  cursor: pointer;
+}
+.btnServices:hover {
+  background-color: $dark-blue;
+}
+
+
+/*btn : click on card*/
+$card-width: 280px;
+$card-height: 500px;
 $image-size: 120%;
-$image-height: 250px;
+$image-height: 300px;
 
-
-.card {
-  
+.card-ghana {
   width: $card-width;
-  margin:0px auto;
-  background-color:white;
+  height: $card-height;
+  margin: 0px auto;
+  background-color: white;
   box-shadow: 0px 5px 20px $dark-blue;
   a {
-   color: #333;
-   text-decoration:none;
+    color: #333;
+    text-decoration: none;
   }
-  
-  &:hover {  
+
+  &:hover {
     .card-image {
       img {
-         width: $image-size+5%;
-         filter:grayscale(0);
-      }  
+        width: $image-size + 5%;
+        filter: grayscale(0);
+      }
     }
   }
-  
 }
 
 .card-image {
-  height: 250px;
-  position:relative;
-  overflow:hidden;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
   img {
     width: $image-size;
-    position:absolute;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     filter: grayscale(1);
     transition-property: filter width;
-    transition-duration: .3s; 
+    transition-duration: 0.3s;
   }
- 
 }
 
 .card-body {
-  text-align:center; 
-  padding: 15px 20px; 
+  text-align: center;
+  padding: 15px 20px;
   box-sizing: border-box;
 }
 
-.card-date {
-  font-family: 'Source Sans Pro', sans-serif;
+.card-subtitle {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
-.card-title, .card-exceprt {
-   font-family: 'Didact Gothic', serif;
+.card-title,
+.card-exceprt {
+  font-family: "Poppins", serif;
 }
 
-.card-date, .card-title {
-  text-align:center;
-  text-transform:uppercase;
-  font-weight: bold;
-  margin-bottom:10px;
+.card-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top:30px;
 }
 
-.card-date, .card-excerpt {
+.card-subtitle,
+.card-excerpt {
   color: #777;
 }

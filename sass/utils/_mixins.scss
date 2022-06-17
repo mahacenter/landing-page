@@ -1,0 +1,15 @@
+/*Mixins*/
+
+@mixin section-title-location{
+    box-sizing: border-box;
+    padding: 5%;
+    margin-top:-20px;
+}
+
+@mixin services-elements {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}

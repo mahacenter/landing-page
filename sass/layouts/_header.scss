@@ -37,30 +37,16 @@
             flex-direction: row;
             list-style: none;
             color: white;
-            font-size: 16px;
             font-family: "Poppins";
             font-weight: 400;
             &__li {
+                font-size: 16px;
                 margin-right: 20px;
             }
             &__li:hover {
                 font-family: "Poppins";
                 font-weight: 700;
             }
-        }
-        &__btn--donate {
-            background-color: $dark-blue;
-            border: 2px solid #fff;
-            color: white;
-            padding: 5px 25px 5px 25px;
-            margin-right: 25px;
-            font-size: 16px;
-            font-family: "Poppins";
-            font-weight: 600;
-            cursor: pointer;
-        }
-        &__btn--donate:hover {
-            background-color: $secondary-color;
         }
     }
 }
@@ -90,26 +76,27 @@
                 font-family: "Poppins";
                 font-weight: 600;
                 text-align: center;
+                margin-left: 0px;
             }
         }
         &__nav {
-            margin-top:20px;
-            margin-bottom:20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
             &__ul {
+                padding: 0px;
+                margin-bottom:20px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                &__ul {
-                    &__li {
-                        margin: 0px;
-                    }
+                &__li {
+                    margin-right: 0px;
                 }
             }
             &__btn--donate {
-                margin:0px;
+                margin: 0px;
             }
         }
     }

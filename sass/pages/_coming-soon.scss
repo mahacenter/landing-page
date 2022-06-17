@@ -1,0 +1,22 @@
+/*Page "Coming son" style*/
+
+.coming-soon {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+    position: fixed;
+    background-color: $dark-blue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    &__title {
+        width: 50%;
+        font-size: 34px;
+        color: #fff;
+        font-family: "Poppins";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
