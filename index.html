@@ -1,396 +1,539 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Title of the page -->
-    <title>map 4i</title>
+    <title>map 4i | a geospatial platform </title>
     <link rel="icon" type="image/png" href="images/favicon/favicon_maha.png" />
     <!-- META Balises -->
-    <meta charset="utf-8"><!-- Encodage balise -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Pour responsive -->
+    <meta charset="utf-8" />
+    <!-- Encodage balise -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Pour responsive -->
 
     <!-- CDN Boostrap-->
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
 
     <!-- Css files import -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
 
     <!-- Font Awesome 6 : last version CDN js -->
-    <script src="https://kit.fontawesome.com/af88f36fa8.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/af88f36fa8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-
-</head>
-
-<body>
+  <body>
     <!-- Header-->
     <header class="header">
-        <div class="header__part1">
-            <div class="header__part1__logo">
-                <img src="images/logo/logo_map4i.png" alt="Logo of maha" />
-            </div>
-            <div class="header__part1__title">
-                Mapping and Analytics Plateform for Immunization
-            </div>
+      <div class="header__part1">
+        <div class="header__part1__logo">
+          <img src="images/logo/logo_map4i.png" alt="Logo of maha" />
         </div>
+        <div class="header__part1__title">
+          Mapping and Analytics Plateform for Immunization
+        </div>
+      </div>
 
-        <nav class="header__nav">
-            <ul class="header__nav__ul">
-                <li class="header__nav__ul__li"><a href=#home>Home</a></li>
-                <li class="header__nav__ul__li"><a href=#services>Our services</a></li>
-                <li class="header__nav__ul__li"><a href=#us>About us</a></li>
-                <li class="header__nav__ul__li"><a href=#contact>Contact us</a></li>
-            </ul>
-            <a href="coming-soon.html" target="_blank"><button class="btnDonate">Donate</button></a>
-        </nav>
+      <nav class="header__nav">
+        <ul class="header__nav__ul">
+          <li class="header__nav__ul__li"><a href="#home">Home</a></li>
+          <li class="header__nav__ul__li">
+            <a href="#services">Our services</a>
+          </li>
+          <li class="header__nav__ul__li"><a href="#us">About us</a></li>
+          <li class="header__nav__ul__li"><a href="#contact">Contact us</a></li>
+        </ul>
+        <a href="coming-soon.html" target="_blank"
+          ><button class="btnDonate">Donate</button></a
+        >
+      </nav>
     </header>
 
     <!-- MAIN -->
     <main>
-        <!-- Home -->
-        <section id="home" class="home">
-            <div class="home__keywords">
-                <div class="home__keywords__text">
-                    <div class="home__keywords__text__4i">4i</div>
-                    <h1>Zero Dose Children. Increase innovation.
-                        Involve all stakeholders. Induce explanations.</h1>
-                </div>
-                <div class="home__keywords__map">
-                    <img src="images/qgis_world_fond.svg" alt="world map" height="200px" width="400px">
-                </div>
+      <!-- Home -->
+      <section id="home" class="home">
+        <div class="home__keywords">
+          <div class="home__keywords__text">
+            <div class="home__keywords__text__4i">4i</div>
+            <h1>
+              Identify Zero Dose Children. Increase innovation. Involve all
+              stakeholders. Infer explanations.
+            </h1>
+          </div>
+          <div class="home__keywords__map">
+            <img
+              src="images/qgis_world_fond.svg"
+              alt="world map"
+              height="200px"
+              width="400px"
+            />
+          </div>
+        </div>
+        <div class="home__desc">
+          <div class="home__desc__item item--1">
+            <div class="home__desc__item__icon">
+              <i class="fa-solid fa-location-dot"></i>
             </div>
-            <div class="home__desc">
-                <div class="home__desc__item item--1">
-                    <div class="home__desc__item__icon">
-                        <i class="fa-solid fa-location-dot"></i>
-                    </div>
-                    <div class="home__desc__item__text">for <strong>identifying</strong> where are the Zero-Dose
-                        Children
-                        and their number through visualizations</div>
-                </div>
-                <div class="home__desc__item item--2">
-                    <div class="home__desc__item__icon">
-                        <i class="fa-solid fa-map"></i>
-                    </div>
-                    <div class="home__desc__item__text">for <strong>inspiring</strong> the use of Geographical
-                        Information
-                        System (GIS) and innovative solutions</div>
-                </div>
-                <div class="home__desc__item item--3">
-                    <div class="home__desc__item__icon">
-                        <i class="fa-solid fa-people-group"></i>
-                    </div>
-                    <div class="home__desc__item__text">for <strong>involving</strong> all the in-country and
-                        international
-                        stakeholders towards a shared vision</div>
-                </div>
-                <div class="home__desc__item item--4">
-                    <div class="home__desc__item__icon">
-                        <i class="fa-solid fa-file-medical"></i>
-                    </div>
-                    <div class="home__desc__item__text">for <strong>inferring</strong> the good and poor performances of
-                        health programmes and their explanations</div>
-                </div>
+            <div class="home__desc__item__text">
+              for <strong>identifying</strong> where are the Zero-Dose Children
+              and their number through visualizations
             </div>
-
-            <!-- Test caroussel-->
-            <div id="carouselExampleCaptions" class="carousel slide carousel-content" data-bs-ride="false">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-                        aria-label="Slide 4"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="images/carousel/carousel-img-1.webp" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <p class="p-carousel">DATA</p>
-                            <p>Where and how many are zero-dose children, and missed communities ? </p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/carousel/carousel-img-2.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <p class="p-carousel">Zero Dose children platform</p>
-                            <div class="content-slide-1">
-                                <p>A geospatial web mapping app which displays the distribution of Zero Dose and
-                                    unvaccinated children at high spatial granularity using high definition gridded
-                                    population</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/carousel/carousel-img-3.webp" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <p class="p-carousel">MULTI-PROJECT, MULTI-FUNDER, MULTI-COUNTRY
-                            <p>
-                            <p>Public – private partnership, Open-source/data</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/carousel/carousel-img-4.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <p class="p-carousel">MULTI LAYERS OF INFORMATION AVAILABLE
-                            <p>
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+          </div>
+          <div class="home__desc__item item--2">
+            <div class="home__desc__item__icon">
+              <i class="fa-solid fa-map"></i>
             </div>
+            <div class="home__desc__item__text">
+              for <strong>increasing</strong> the use of Geographical
+              Information System (GIS) and innovative solutions
+            </div>
+          </div>
+          <div class="home__desc__item item--3">
+            <div class="home__desc__item__icon">
+              <i class="fa-solid fa-people-group"></i>
+            </div>
+            <div class="home__desc__item__text">
+              for <strong>involving</strong> all the in-country and
+              international stakeholders towards a shared vision
+            </div>
+          </div>
+          <div class="home__desc__item item--4">
+            <div class="home__desc__item__icon">
+              <i class="fa-solid fa-file-medical"></i>
+            </div>
+            <div class="home__desc__item__text">
+              for <strong>inferring</strong> the good and poor performances of
+              health programmes and their explanations
+            </div>
+          </div>
+        </div>
 
-        </section>
-
-        <!--Services-->
-        <section id="services" class="services">
-            <div class="services__content">
-                <div class="section-title">
-                    <h2>Our services</h2>
+        <!-- Caroussel-->
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide carousel-content"
+          data-bs-ride="false"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="images/carousel/carousel-img-1.webp"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <p class="p-carousel">DATA</p>
+                <p>
+                  Where and how many are zero-dose children, and missed
+                  communities ?
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images/carousel/carousel-img-2.png"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <p class="p-carousel">Zero Dose children platform</p>
+                <div class="content-slide-1">
+                  <p>
+                    A geospatial web mapping app which displays the distribution
+                    of Zero Dose and unvaccinated children at high spatial
+                    granularity using high definition gridded population
+                  </p>
                 </div>
-                <h3>Our platform</h3>
-                <div class="services__content__platform">
-                    <a href="https://lizmap.mahacenter.com/index.php/view/map/?repository=production&project=App_zdchildren_Ghana"
-                        target="_blank">
-                        <div class="card-ghana">
-                            <!-- Image à la une -->
-                            <div class="card-image"><img src="images/ghana_color.png" alt="Ghana map" />
-                            </div>
-                            <!-- Fin de l'image à la une -->
-                            <!-- Corp de notre carte -->
-                            <div class="card-body">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images/carousel/carousel-img-3.webp"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <p class="p-carousel">
+                  MULTI-PROJECT, MULTI-FUNDER, MULTI-COUNTRY
+                </p>
+                <p></p>
+                <p>Public – private partnership, Open-source/data</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images/carousel/carousel-img-4.png"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <p class="p-carousel">MULTI LAYERS OF INFORMATION AVAILABLE</p>
+                <p></p>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <!--Services-->
+      <section id="services" class="services">
+        <div class="services__content">
+          <div class="section-title">
+            <h2>Our services</h2>
+          </div>
+          <h3>Our platform</h3>
+          <div class="services__content__platform">
+            <a
+              href="https://lizmap.mahacenter.com/index.php/view/map/?repository=production&project=App_zdchildren_Ghana"
+              target="_blank"
+            >
+              <div class="card-ghana">
+                <!-- Image à la une -->
+                <div class="card-image">
+                  <img src="images/ghana_color.png" alt="Ghana map" />
+                </div>
+                <!-- Fin de l'image à la une -->
+                <!-- Corp de notre carte -->
+                <div class="card-body">
+                  <!-- Date de publication de l'article-->
+                  <div class="card-subtitle">
+                    <p>
+                      ACCESS TO Mapping & Analytics Platform for Immunization
+                    </p>
+                  </div>
+                  <!-- Titre de l'article -->
+                  <div class="card-title">
+                    <h4 class="card-title">Demo land (Ghana)</h4>
+                  </div>
+                </div>
+                <!-- Fin du corp de notre carte -->
+              </div>
+            </a>
+            <div class="services__content__platform__desc">
+              <h5>
+                Enhanced analytical capabilities in order to appraise pro-equity
+                interventions
+              </h5>
+              <p class="p-white">
+                Users of the MAP 4i platform improve their analysis aiming at
+                (1) identifying of gaps and targeting ZD children, (2) using
+                data sources that shed light on socio- economic, geographical
+                and ethnic diferences in disease burden.
+              </p>
+              <p class="p-white">
+                <strong
+                  >Overall, the proposed innovative approaches through mapping
+                  and analytics lead to better informed and effective responses
+                  about immunization activities, and ultimately enabling
+                  evidence-based decision-making.</strong
+                >
+              </p>
+              <div class="services__content__platform__desc__countries">
+                <h5>Select an other country</h5>
+                <div class="countries">
+                  <button class="btnServices">
+                    <a
+                      href="https://lizmap.mahacenter.com/index.php/view/"
+                      target="_blank"
+                      >Gambia</a
+                    >
+                  </button>
+                  <button class="btnServices">
+                    <a
+                      href="https://lizmap.mahacenter.com/index.php/view/"
+                      target="_blank"
+                      >Malawi</a
+                    >
+                  </button>
+                </div>
+              </div>
+              <div class="services__content__platform__desc__build">
+                <h5>Build with</h5>
+                <div class="tech">
+                  <img
+                    class="tech__logo"
+                    src="images/others/Logo-OVH.png"
+                    alt=""
+                  />
+                  <img
+                    class="tech__logo"
+                    src="images/others/homepage-docker-logo.png"
+                    alt=""
+                  />
+                  <img
+                    class="tech__logo"
+                    src="images/others/postgresql.png"
+                    alt=""
+                  />
+                  <img
+                    class="tech__logo"
+                    src="images/others/DBeaver.png"
+                    alt=""
+                  />
+                  <img
+                    class="tech__logo"
+                    src="images/others/qgis-logo-v3.png"
+                    alt=""
+                  />
+                  <img
+                    class="tech__logo"
+                    src="images/others/lizmap.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3>Technical brief</h3>
+          <div class="services__content__brief">
+            <div class="services__content__brief__extrait">
+              <p class="p-white">
+                "There is one major innovative aspect of the MAP 4i app: the
+                coding calculation for merging DHIS data extraction. (Number of
+                children vaccinated for DTP1 & DTP3 by district) with High
+                Definition Gridded Population (Raster or picture with data
+                linked pixels), which enables to calculate the indicators and to
+                represent them in the form of maps and graphs at different
+                geographical levels."
+              </p>
+            </div>
+            <div class="services__content__brief__access">
+              <p class="p-white">To learn more about the application</p>
+              <button class="btnServices">
+                <a
+                  href="https://www.dropbox.com/s/905cqmtx1rhnz0r/OP_ZDChildren_triangulation_v3.pdf?dl=0"
+                  target="_blank"
+                  >Read the technical brief</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--About us-->
+      <section id="us" class="us">
+        <div class="us__content">
+          <div class="section-title">
+            <h2>About us</h2>
+          </div>
+          <h3>MAP 4i.</h3>
+          <div class="us__content__bloc">
+            <div class="section-paragraph section-paragraph--us">
+              <p class="p-white">
+                MAP 4i - Mapping & Analytics Platform for Immunization - is an
+                international not-for-profit organization, which provides
+                Zero-Dose Children related information to in-country &
+                development organizations, thanks to a devoted digital platform.
+              </p>
+            </div>
+            <div class="section-paragraph section-paragraph--illustration">
+              <img src="images/schema_map4i.png" alt="" />
+            </div>
+          </div>
+          <h3>MAHA.</h3>
+          <div class="us__content__bloc">
+            <div class="section-paragraph section-paragraph--us">
+              <p class="p-white">
+                The digital platform MAP 4i has a complementary partner, namely
+                MAHA (Mapping & Analytics for Health Activities)…that provides
+                high-quality Technical Assistance to the partnered
+                organizations.
+              </p>
+            </div>
+            <div class="section-paragraph section-paragraph--illustration">
+              <p class="p-white">
+                Reminder: The Zero-Dose Children platform developed by MAHA has
+                been configured to be easily scalable.
+              </p>
+            </div>
+          </div>
+
+          <h3>Partnership.</h3>
+          <div class="us__content__bloc us__content__bloc--3">
+            <div class="section-paragraph section-paragraph--us">
+              <p class="p-white">
+                MAP 4i & MAHA support both international funding and in-country
+                implementing organizations alike, to implement operational and
+                strategic Geographical Information System (GIS) solutions about
+                Expanded Programme on Immunizations (EPI) challenges.
+              </p>
+              <p class="p-white">
+                MAP 4i can receive financial contributions from international
+                funding and private sector based organizations alike.
+              </p>
+            </div>
+            <div class="section-paragraph section-paragraph--illustration">
+              <div class="carousel-partner">
+                    <div class="carousel-partner__item">
+                        <div class="card-partner__image">
+                            <img src="images/partnership/compellings-works.png" at="">
+                        </div>
+                        <div class="card-partner__content">
                                 <!-- Date de publication de l'article-->
-                                <div class="card-subtitle">
-                                    <p>ACCESS TO Mapping & Analytics Platform for Immunization</p>
+                                <div class="card-partner__content__subtitle">
+                                  <p>
+                                    Type of partner
+                                  </p>
                                 </div>
                                 <!-- Titre de l'article -->
-                                <div class="card-title">
-                                    <h4 class="card-title">Demo land (Ghana)</h4>
+                                <div class="card-partner__content__title">
+                                  <h4>Compelling works</h4>
                                 </div>
-                            </div>
-                            <!-- Fin du corp de notre carte -->
-                        </div>
-                    </a>
-                    <div class="services__content__platform__desc">
-                        <h5>Enhanced analytical capabilities in order to appraise pro-equity interventions</h5>
-                        <p class="p-white">
-                            Users of the MAP 4i platform improve their analysis aiming at (1) identifying of gaps and
-                            targeting ZD children, (2) using data sources that shed light on socio- economic,
-                            geographical and ethnic diferences in disease burden.
-                        </p>
-                        <p class="p-white">
-                            <strong>Overall, the proposed innovative approaches through mapping and analytics lead to
-                                better informed and effective responses about immunization activities, and ultimately
-                                enabling
-                                evidence-based decision-making.</strong>
-                        </p>
-                        <div class="services__content__platform__desc__countries">
-                            <h5>Select an other country</h5>
-                            <div class="countries">
-                                <button class="btnServices"><a href="https://lizmap.mahacenter.com/index.php/view/"
-                                        target="_blank">Gambia</a>
-                                </button>
-                                <button class="btnServices"><a href="https://lizmap.mahacenter.com/index.php/view/"
-                                        target="_blank">Malawi</a>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="services__content__platform__desc__build">
-                            <h5>Build with</h5>
-                            <div class="tech">
-                                <img class="tech__logo" src="images/others/Logo-OVH.png" alt="">
-                                <img class="tech__logo" src="images/others/homepage-docker-logo.png" alt="">
-                                <img class="tech__logo" src="images/others/postgresql.png" alt="">
-                                <img class="tech__logo" src="images/others/DBeaver.png" alt="">
-                                <img class="tech__logo" src="images/others/qgis-logo-v3.png" alt="">
-                                <img class="tech__logo" src="images/others/lizmap.png" alt="">
-                            </div>
-                        </div>
+                              </div>
                     </div>
-                </div>
-                <h3>Technical brief</h3>
-                <div class="services__content__brief">
-                    <div class="services__content__brief__extrait">
-                        <p class="p-white">
-                            "There is one major innovative aspect of the MAP 4i app:
-                            the coding calculation for merging DHIS data extraction. (Number of
-                            children vaccinated for DTP1 & DTP3 by district) with High Definition
-                            Gridded Population (Raster or picture with data linked pixels),
-                            which enables to calculate the indicators and to represent
-                            them in the form of maps and graphs at
-                            different geographical levels."
-                        </p>
+                    <div class="carousel-partner__item">
+                        <p>SwissTPH</p>
+                        <img src="images/partnership/swisstph.png" at="">
                     </div>
-                    <div class="services__content__brief__access">
-                        <p class="p-white">
-                            To learn more about the application
-                        </p>
-                        <button class="btnServices"><a
-                                href="https://www.dropbox.com/s/905cqmtx1rhnz0r/OP_ZDChildren_triangulation_v3.pdf?dl=0"
-                                target="_blank">Read the technical brief</a></button>
+                    <div class="carousel-partner__item">
+                        <p>GAVI</p>
+                        <img src="images/partnership/gavi.png" at="">
                     </div>
-
-
-                </div>
+                  </div>
+              </div>
             </div>
-        </section>
+          </div>
+          <h3>Meet the team !</h3>
+        </div>
+      </section>
 
-        <!--About us-->
-        <section id="us" class="us">
-            <div class="us__content">
-                <div class="section-title">
-                    <h2>About us</h2>
-                </div>
-                <h3>MAP 4i.</h3>
-                <div class="section-paragraph">
-                    <p class="p-white">
-                        MAP 4i - Mapping & Analytics Platform for Immunization - is an international not-for-profit
-                        organization, practically embedded into a digital platform, which provides immunizations related
-                        information management services to development organizations, enabling partners to make informed
-                        decisions towards Zero-Dose Children – or not vaccinated- based strategy.
-                    </p>
-                    <p class="p-white">
-                        All the running expenses of the digital platform such as the hosting of the servers, any further
-                        developpment/improvement and related expenses of the Zero-Dose Children application are
-                        allocated to MAP 4I.
-                    </p>
-                    <p class="p-white">
-                        For additional Technical Assistance, the digital platform MAP 4i has a complementary partner
-                        Mapping & Analytics for Health Activities (MAHA)…
-                    </p>
-                </div>
-                <h3>MAHA.</h3>
-                <div class="section-paragraph">
-                    <p class="p-white">
-                        The digital platform has a complemenray partner Mapping & Analytics for Health Activities
-                        (MAHA)…that ultimately provides high-quality targeted Technical Assistance (TA) to the
-                        partnered organizations; the TA services refer mainly to the trainings about the
-                        functionalities of the Geographical Information System (GIS) aplications and the setting up
-                        and maintenance of server hosting.
-                    </p>
-                    <p class="p-white">
-                        Reminder: The Zero-Dose Children platform has been configured to be easily scalable, thanks
-                        to a powerful coding approach and outsourced database/server solutions.
-                    </p>
-                    <p class="p-white">
-                        There are two options: Use our cloud architecture or deploy onto local servers.
-                    </p>
-                </div>
-
-                <h3>Partnership.</h3>
-                <div class="us__content__bloc us__content__bloc--3"></div>
-                <div class="section-paragraph">
-                    <p class="p-white">
-                        MAP 4i & MAHA support both international funding and in-country implementing organizations
-                        alike, to implement operational and strategic Geographical Information System (GIS)
-                        solutions
-                        about Expanded Programme on Immunizations (EPI) challenges.
-                    </p>
-                    <p class="p-white">
-                        MAP 4i can receive financial contributions from international funding and private sector
-                        based
-                        organizations alike.
-                    </p>
-                </div>
-                <div class="carousel">
-                </div>
-                <h3>Meet the team !</h3>
+      <!-- Contact -->
+      <section id="contact" class="contact">
+        <div class="contact__content">
+          <div class="section-title">
+            <h2>Get in touch!</h2>
+          </div>
+          <div class="contact__content__desc">
+            <div class="contact__content__desc__question">
+              <div class="contact__content__desc__question__doyou">
+                <p class="p-blue">
+                  Do you want more information or be part of map 4i ?
+                </p>
+              </div>
             </div>
+            <div class="contact__content__desc__form"></div>
+          </div>
+        </div>
+      </section>
 
-
-        </section>
-
-        <!-- Contact -->
-        <section id="contact" class="contact">
-            <div class="contact__content">
-                <div class="section-title">
-                    <h2>Get in touch!</h2>
-                </div>
-                <div class="contact__content__desc">
-                    <div class="contact__content__desc__question">
-                        <div class="contact__content__desc__question__doyou">
-                            <p class="p-blue">
-                                Do you want more information or be part of map 4i ?
-                            </p>
-                        </div>
-
-                    </div>
-                    <div class="contact__content__desc__form">
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Donate -->
-        <section id="donate" class="donate">
-            <div class="donate__content">
-                <p class="p-white">Support the map 4i project</p>
-                <a href="coming-soon.html" target="_blank">
-                    <button class="btnDonate btnDonate--end">
-                        Donate
-                    </button>
-                </a>
-
-            </div>
-        </section>
-
+      <!-- Donate -->
+      <section id="donate" class="donate">
+        <div class="donate__content">
+          <p class="p-white">Support the map 4i project</p>
+          <a href="coming-soon.html" target="_blank">
+            <button class="btnDonate btnDonate--end">Donate</button>
+          </a>
+        </div>
+      </section>
     </main>
 
     <footer id="footer" class="footer">
-        <div class="footer__blocs">
-            <!-- Site map" -->
-            <div class="footer__blocs__bloc">
-                <h6>Site Map</h6>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Our services</a></li>
-                    <li><a href="#us">About us</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <!-- MAP 4I -->
-            <div class="footer__blocs__bloc">
-                <h6>MAP 4I</h6>
-                <ul>
-                    <li><a href="">Status?</a></li>
-                    <li><a href="https://lizmap.mahacenter.com/index.php/view/map/?repository=production&project=App_zdchildren_Ghana"
-                            target="_blank">Geospatial platform Demo</a></li>
-                </ul>
-            </div>
-            <!-- MAHA -->
-            <div class="footer__blocs__bloc">
-                <h6>MAHA</h6>
-                <ul>
-                    <li>Mapping and Analytics for Health Activities</li>
-                    <li>Veyrier du lac - France</li>
-                    <li>Raphaël Girod : +33 7 88 18 21 63</li>
-                    <li><a href="mailto:info@mahacenter.com">e-mail : info@mahacenter.com</a></li>
-                </ul>
-            </div>
+      <div class="footer__blocs">
+        <!-- Site map" -->
+        <div class="footer__blocs__bloc">
+          <h6>Site Map</h6>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Our services</a></li>
+            <li><a href="#us">About us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
-        <p class="copyright">Web site by Marianne Bricquir, MAHA 2020</p>
+        <!-- MAP 4I -->
+        <div class="footer__blocs__bloc">
+          <h6>MAP 4I</h6>
+          <ul>
+            <li><a href="">Status?</a></li>
+            <li>
+              <a
+                href="https://lizmap.mahacenter.com/index.php/view/map/?repository=production&project=App_zdchildren_Ghana"
+                target="_blank"
+                >Geospatial platform Demo</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- MAHA -->
+        <div class="footer__blocs__bloc">
+          <h6>MAHA</h6>
+          <ul>
+            <li>Mapping and Analytics for Health Activities</li>
+            <li>Veyrier du lac - France</li>
+            <li>Raphaël Girod : +33 7 88 18 21 63</li>
+            <li>
+              <a href="mailto:info@mahacenter.com"
+                >e-mail : info@mahacenter.com</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">Web site by Marianne Bricquir, MAHA 2020</p>
     </footer>
 
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
-
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/carouselpartner.js"></script>
+    <script src="js/form.js"></script>
+  </body>
 </html>

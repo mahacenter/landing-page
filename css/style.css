@@ -466,6 +466,47 @@ img {
     display: block !important;
   }
 }
+.carousel-partner {
+  position: relative;
+}
+
+.carousel-partner__item {
+  height: 300px;
+  padding: 1em;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  color: #ffffff;
+  display: none;
+}
+
+.carousel-partner__item--selected {
+  display: block;
+}
+
+.carousel-partner__nav {
+  width: 100%;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+.carousel-partner__button {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.carousel-partner__button--selected {
+  background: rgba(255, 255, 255, 0.5);
+}
+
 /*fichiers scss pour les éléments selon les pages*/
 /*Page d'accueil */
 /*Section ABOUT US*/
@@ -550,6 +591,16 @@ img {
   width: 50%;
   margin-right: 10%;
   margin-bottom: 100px;
+}
+.section-paragraph--us {
+  margin-right: 20px;
+  margin-bottom: 25px;
+}
+.section-paragraph--illustration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
 }
 
 /*Section application*/
@@ -636,6 +687,7 @@ img {
 .us__content__bloc {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 /**************** End of the About us section *****************/
@@ -740,6 +792,12 @@ img {
     width: 100%;
     margin-bottom: 0px;
   }
+  .section-paragraph--illustration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+  }
 
   .services__content {
     box-sizing: border-box;
@@ -769,6 +827,14 @@ img {
     box-sizing: border-box;
     padding: 5%;
     margin-top: -20px;
+  }
+  .us__content__bloc {
+    display: flex;
+    flex-direction: column;
+  }
+  .us__content__bloc img {
+    max-width: 100%;
+    height: auto;
   }
 
   .contact__content {
@@ -814,6 +880,35 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.coming-soon__img-content {
+  width: 50%;
+  height: 100%;
+}
+.coming-soon__img-content img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .coming-soon {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .coming-soon__title {
+    width: 100%;
+    font-size: 20px;
+    margin: 25px;
+  }
+  .coming-soon__img-content {
+    width: 100%;
+    height: 100%;
+  }
+  .coming-soon__img-content img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
