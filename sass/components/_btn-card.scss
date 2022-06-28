@@ -115,3 +115,78 @@ $image-height: 300px;
 .card-excerpt {
   color: #777;
 }
+
+
+/*Card team*/
+/*btn : click on card*/
+$card-team-width: 250px;
+$card-team-height: 340px;
+$image-team-size: 120%;
+$image-team-height: 300px;
+
+.card-team {
+  width: $card-team-width;
+  height: $card-team-height;
+  margin: 30px;
+  background-color: white;
+  box-shadow: 0px 2px 10px black;
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+
+  &:hover {
+    .card-team-image {
+      img {
+        width: $image-size + 5%;
+        filter: grayscale(0);
+      }
+    }
+  }
+}
+
+.card-team-image {
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  img {
+    width: $image-size;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: grayscale(1);
+    transition-property: filter width;
+    transition-duration: 0.3s;
+  }
+}
+
+.card-team-body {
+  text-align: center;
+  padding: 15px 15px;
+  box-sizing: border-box;
+}
+
+.card-team-subtitle {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.card-team-title,
+.card-team-exceprt {
+  font-family: "Poppins", serif;
+}
+
+.card-team-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top:10px;
+}
+
+.card-team-subtitle,
+.card-team-excerpt {
+  color: #777;
+}

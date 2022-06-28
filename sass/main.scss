@@ -11,10 +11,11 @@
 @import "./layouts/header";
 @import "./layouts/footer";
 
-@import "./components/btn";
+@import "./components/btn-card";
 @import "./components/carousel";
 @import "./components/carouselpartner";
 
 /*fichiers scss pour les éléments selon les pages*/
 @import "./pages/index";
+@import "./pages/team";
 @import "./pages/coming-soon";

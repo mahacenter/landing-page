@@ -60,6 +60,16 @@ h5 {
 }
 
 h6 {
+    margin-top: 5px;
+    font-size: 22px;
+    text-align: center;
+    color:white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+
+}
+
+h7 {
     font-size: 18px;
     font-weight: 600;
     color:#FFF;
@@ -84,6 +94,12 @@ p {
     color:#FFF;
     margin-bottom:20px;
     font-family: "Poppins", sans-serif;
+    &--lightCenter{
+        margin-bottom:0px;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+    }
 }
 
 .p-blue {
@@ -93,7 +109,6 @@ p {
     color:$dark-blue;
     font-family: "Poppins", sans-serif;
 }
-
 
 
 

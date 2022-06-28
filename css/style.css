@@ -105,6 +105,15 @@ h5 {
 }
 
 h6 {
+  margin-top: 5px;
+  font-size: 22px;
+  text-align: center;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+h7 {
   font-size: 18px;
   font-weight: 600;
   color: #FFF;
@@ -129,6 +138,12 @@ p {
   color: #FFF;
   margin-bottom: 20px;
   font-family: "Poppins", sans-serif;
+}
+.p-white--lightCenter {
+  margin-bottom: 0px;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
 }
 
 .p-blue {
@@ -413,6 +428,70 @@ li {
   color: #777;
 }
 
+/*Card team*/
+/*btn : click on card*/
+.card-team {
+  width: 250px;
+  height: 340px;
+  margin: 30px;
+  background-color: white;
+  box-shadow: 0px 2px 10px black;
+}
+.card-team a {
+  color: #333;
+  text-decoration: none;
+}
+.card-team:hover .card-team-image img {
+  width: 125%;
+  filter: grayscale(0);
+}
+
+.card-team-image {
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+.card-team-image img {
+  width: 120%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: grayscale(1);
+  transition-property: filter width;
+  transition-duration: 0.3s;
+}
+
+.card-team-body {
+  text-align: center;
+  padding: 15px 15px;
+  box-sizing: border-box;
+}
+
+.card-team-subtitle {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.card-team-title,
+.card-team-exceprt {
+  font-family: "Poppins", serif;
+}
+
+.card-team-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.card-team-subtitle,
+.card-team-excerpt {
+  color: #777;
+}
+
 /*Carousel style*/
 .carousel-content {
   box-sizing: border-box;
@@ -469,15 +548,31 @@ img {
 .carousel-partner {
   position: relative;
 }
-
+.carousel-partner__image {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+.carousel-partner__image img {
+  height: 140px;
+  width: auto;
+}
 .carousel-partner__item {
-  height: 300px;
-  padding: 1em;
+  height: 350px;
+  width: 300px;
+  padding: 5px;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
-  font-size: 2em;
-  color: #ffffff;
+  font-size: 12px;
   display: none;
+  background-color: #1c6cac;
+  margin: 0px auto;
+  box-shadow: 0px 5px 20px #193863;
+}
+.carousel-partner__item__content {
+  height: 40%;
 }
 
 .carousel-partner__item--selected {
@@ -497,14 +592,14 @@ img {
   width: 10px;
   height: 10px;
   display: inline-block;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.2);
   border-radius: 50%;
   margin: 0 5px;
   cursor: pointer;
 }
 
 .carousel-partner__button--selected {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 /*fichiers scss pour les éléments selon les pages*/
@@ -860,6 +955,16 @@ img {
   }
 }
 /**************** End of the mobile version *****************/
+.pageteam {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex;
+  flex-wrap: wrap;
+  padding: 90px;
+}
+
 /*Page "Coming son" style*/
 .coming-soon {
   box-sizing: border-box;
