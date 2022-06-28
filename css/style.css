@@ -145,6 +145,9 @@ p {
   font-weight: 400;
   text-align: center;
 }
+.p-white--big {
+  font-size: 18px;
+}
 
 .p-blue {
   margin-top: 5px;
@@ -685,17 +688,15 @@ img {
   text-align: justify;
   width: 50%;
   margin-right: 10%;
-  margin-bottom: 100px;
 }
 .section-paragraph--us {
-  margin-right: 20px;
-  margin-bottom: 25px;
+  margin-right: 0px;
 }
 .section-paragraph--illustration {
+  margin-right: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 100px;
 }
 
 /*Section application*/
@@ -780,9 +781,11 @@ img {
   padding-right: 90px;
 }
 .us__content__bloc {
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /**************** End of the About us section *****************/

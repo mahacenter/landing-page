@@ -81,16 +81,14 @@
     text-align: justify;
     width: 50%;
     margin-right: 10%;
-    margin-bottom: 100px;
     &--us {
-        margin-right: 20px;
-        margin-bottom: 25px;
+        margin-right: 0px;
     }
     &--illustration {
+        margin-right: 0px;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-left : 100px;
     }
 }
 
@@ -166,9 +164,11 @@
         padding-left: 90px;
         padding-right: 90px;
         &__bloc {
+            width: 100%;
             display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
     }
 }
@@ -283,7 +283,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-left : 0px;
+            margin-left: 0px;
         }
     }
 
