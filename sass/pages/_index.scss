@@ -172,6 +172,10 @@
         }
     }
 }
+
+.meetTheTeam{
+    margin:50px;
+}
 /**************** End of the About us section *****************/
 
 /**************** Contact section "Get in touch!"*****************/
@@ -196,6 +200,10 @@
                 }
             }
             &__form {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
                 width: 60%;
                 margin-top: -28.8px;
                 background-color: $secondary-color;
@@ -346,6 +354,11 @@
                 }
             }
         }
+    }
+
+    .meetTheTeam{
+        margin:0px;
+        margin-bottom:50px;
     }
 }
 

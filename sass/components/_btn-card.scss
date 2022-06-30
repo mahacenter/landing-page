@@ -10,11 +10,11 @@
   font-weight: 600;
   cursor: pointer;
   &--end {
-    margin:0px;
+    margin: 0px;
     width: 180px;
     height: 60px;
     font-size: 24px;
-    text-align:center;
+    text-align: center;
   }
 }
 .btnDonate:hover {
@@ -22,13 +22,13 @@
 }
 
 @media screen and (max-width: 992px) {
- .btnDonate {
-     margin:0px;
+  .btnDonate {
+    margin: 0px;
   }
 }
 
 /*btnBrief*/
-.btnServices{
+.btnServices {
   background-color: $light-blue;
   border: 2px solid #fff;
   color: white;
@@ -42,6 +42,22 @@
   background-color: $dark-blue;
 }
 
+/*bnt send an e-mail*/
+.btnSend {
+  box-sizing: border-box;
+  background-color: $dark-blue;
+  border: 2px solid #fff;
+  color: white;
+  padding: 5px 25px 5px 25px;
+  font-size: 20px;
+  font-family: "Poppins";
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btnSend:hover {
+  background-color: $secondary-color;
+}
 
 /*btn : click on card*/
 $card-width: 280px;
@@ -108,14 +124,13 @@ $image-height: 300px;
   text-align: center;
   text-transform: uppercase;
   font-weight: 600;
-  margin-top:30px;
+  margin-top: 30px;
 }
 
 .card-subtitle,
 .card-excerpt {
   color: #777;
 }
-
 
 /*Card team*/
 /*btn : click on card*/
@@ -183,7 +198,7 @@ $image-team-height: 300px;
   text-align: center;
   text-transform: uppercase;
   font-weight: 600;
-  margin-top:10px;
+  margin-top: 10px;
 }
 
 .card-team-subtitle,

@@ -368,6 +368,23 @@ li {
   background-color: #193863;
 }
 
+/*bnt send an e-mail*/
+.btnSend {
+  box-sizing: border-box;
+  background-color: #193863;
+  border: 2px solid #fff;
+  color: white;
+  padding: 5px 25px 5px 25px;
+  font-size: 20px;
+  font-family: "Poppins";
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btnSend:hover {
+  background-color: #ff6200ff;
+}
+
 /*btn : click on card*/
 .card-ghana {
   width: 280px;
@@ -788,6 +805,10 @@ img {
   align-items: center;
 }
 
+.meetTheTeam {
+  margin: 50px;
+}
+
 /**************** End of the About us section *****************/
 /**************** Contact section "Get in touch!"*****************/
 .contact {
@@ -814,6 +835,10 @@ img {
   margin-right: 50px;
 }
 .contact__content__desc__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 60%;
   margin-top: -28.8px;
   background-color: #ff6200ff;
@@ -956,6 +981,11 @@ img {
     height: 350px;
     margin: 0px;
   }
+
+  .meetTheTeam {
+    margin: 0px;
+    margin-bottom: 50px;
+  }
 }
 /**************** End of the mobile version *****************/
 .pageteam {
@@ -968,6 +998,11 @@ img {
   padding: 90px;
 }
 
+@media screen and (max-width: 992px) {
+  .pageteam {
+    padding: 10px;
+  }
+}
 /*Page "Coming son" style*/
 .coming-soon {
   box-sizing: border-box;

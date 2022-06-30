@@ -1,10 +1,15 @@
 .pageteam {
-    box-sizing:border-box; 
-    display:flex;
+    box-sizing: border-box;
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex;
     flex-wrap: wrap;
-    padding:90px;   
+    padding: 90px;
 }
 
+@media screen and (max-width: 992px) {
+    .pageteam {
+        padding: 10px;
+    }
+}
