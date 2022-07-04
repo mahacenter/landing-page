@@ -127,6 +127,7 @@ p {
 }
 
 .p-carousel {
+  margin-top: 20px;
   font-size: 24px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -529,7 +530,7 @@ li {
   justify-content: center;
   align-items: center;
   padding: 0px;
-  top: 20px;
+  top: 0px;
 }
 
 .d-block {
@@ -538,6 +539,9 @@ li {
 
 img {
   object-fit: cover;
+}
+img--home {
+  margin-top: 40px;
 }
 
 /*Mobile version*/
@@ -561,8 +565,11 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 40px;
     display: block !important;
+  }
+
+  img--home {
+    margin-top: 60px;
   }
 }
 .carousel-partner {

@@ -5,8 +5,8 @@
     margin-right: 90px;
 }
 /*Bootstrap class*/
-.carousel{
-    margin-bottom:100px;
+.carousel {
+    margin-bottom: 100px;
 }
 
 .carousel-caption {
@@ -14,7 +14,7 @@
     justify-content: center;
     align-items: center;
     padding: 0px;
-    top: 20px;
+    top: 0px;
 }
 
 .d-block {
@@ -23,20 +23,20 @@
 
 img {
     object-fit: cover;
+    &--home {
+        margin-top: 40px;
+    } 
 }
-
-
-
 
 /*Mobile version*/
 @media screen and (max-width: 992px) {
     .carousel-content {
-        padding:0px;
+        padding: 0px;
         margin-left: 0px;
         margin-right: 0px;
     }
-    .content-slide-1{
-        display:none;
+    .content-slide-1 {
+        display: none;
     }
     .d-block {
         height: 400px;
@@ -46,7 +46,11 @@ img {
         display: flex;
         justify-content: center;
         align-items: center;
-        top: 40px;
-        display: block!important;
+        display: block !important;
+    }
+    img {
+        &--home {
+            margin-top: 60px;
+        }
     }
 }
